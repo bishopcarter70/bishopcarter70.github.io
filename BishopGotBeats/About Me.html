@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BishopGotBeats</title>
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="stylesheet" href="BishopGotBeats.css">
+</head>
+<header>
+    <div id="Logo" style="font-size: 2rem; cursor: pointer;"  onclick="window.location.href='StripeSoundsBeatz.html'"> &#x212C;</a></div>
+    <div id="CartContainer" style="margin-top: 1vh;">
+        <div id="Cart">&#x1F6D2;</div>
+        <h1 id="CartQuantity">0</h1>
+    </div>
+</header>
+<body>
+    <div id="CartPopUpContainer">
+        <div id="CartPopUp">
+            <div id ="CloseModal" class="CloseButton" onclick= "closeModal()" style="margin-left: 60vw;" >×</div>
+            <div id="CartInformation">
+                <ul id="CartItems">
+                 <!-- Cart Products Will Be Dynamically Loaded -->
+                </ul>
+                <p>Total: $<span id="CartTotal">0</span></p>
+                <button id="BuyButton">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <section id="Biography">
+        <picture>
+                <source srcset="TheWeekndPhone.jpg" media="(width < 400px)">
+                <source srcset="TheWeekndTablet.jpg" media="(width < 700px)">
+                <source srcset="TheWeekndDesktop.jpg" media="(width > 700px)">
+                <img src="TheWeekndDesktop.jpg" style="width: 50vw;" alt="TheWeeknd">
+        </picture>
+        <div id="BiographyText">
+            <h1> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                culpa qui officia deserunt mollit anim id est laborum.            
+            </h1>
+        </div>
+    </section>
+    <section id="Biography">
+        <div id="BiographyText">
+            <h1> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                culpa qui officia deserunt mollit anim id est laborum.            
+            </h1>
+        </div>
+        <picture>
+                <source srcset="TheWeekndPhone.jpg" media="(width < 400px)">
+                <source srcset="TheWeekndTablet.jpg" media="(width < 700px)">
+                <source srcset="TheWeekndDesktop.jpg" media="(width > 700px)">
+                <img src="TheWeekndDesktop.jpg" style="width: 50vw;" alt="TheWeeknd">
+        </picture>
+    </section>
+    <section class="OtherOnlinePlatforms">
+    <!-- <span id="AboutTwitchLiveStream"> </span> --> 
+       <div class="SocialsTakeAction">
+            <h1> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                culpa qui officia deserunt mollit anim id est laborum.            
+            </h1>
+        </div>
+        <a href="https://www.twitch.tv/stripesounds"> 
+            <picture>
+            <source srcset="\TwitchLogo114x114.png" width="114px" height="114px" media="(min-width: 360px)">
+            <source srcset="\TwitchLogo320x192.png" width="320px" height="192px" media="(min-width: 810px)">
+            <source srcset="\TwitchLogo500x120.png" width="500px" height="120px" media="(min-width: 1280px)">
+            <img src="\TwitchLogo500x120.png" alt="StripeSoundsBeatz">
+            </picture>
+        </a>
+    </section>
+    <section class="OtherOnlinePlatforms">
+        <a href="https://www.youtube.com/@StripeSoundsBeatz/"> 
+            <picture>
+            <source srcset="\YoutubeLogo114x144.png" media="(min-width: 360px)">
+            <source srcset="\YoutubeLogo320x192.png" media="(min-width: 810px)">
+            <source srcset="\YoutubeLogo500x120.png" media="(min-width: 1280px)">
+            <img src="\YoutubeLogo500x120.png" alt="StripeSoundsBeatz">
+        </picture>
+        </a>
+        <div class="SocialsTakeAction">
+            <h1> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                culpa qui officia deserunt mollit anim id est laborum.            
+            </h1>
+        </div>
+    </section>
+    <script src="Modals.js"></script>
+    <script src="MusicPlayer.js"></script>
+    <script src="MusicPlaylist.js"></script>
+    <script src="Cart.js"></script>
+</body>
+<footer>
+    <div id="Container" style="display: flex; text-align: center; justify-content: space-around;">
+        <div id="SocialMediaIconsWOthers">
+        <h1> CONNECT WITH ME</h1>
+            <div style="display: flex; justify-content: space-evenly;">
+                <a href="https://www.instagram.com/stripesoundsbeatz/"> 
+                <picture>
+                    <source srcset="InstagramLogo25x20.png" media="(min-width: 360px)">
+                    <source srcset="InstagramLogo810x1080.png" width="500vw" height="500vh" media="(min-width: 810px)">
+                    <source srcset="InstagramLogo1280x720" width="500vw" height="500vh" media="(min-width: 1280px)">
+                    <img src="InstagramLogo1280x720" style="width: 150%;" alt="InstagramLogo1280x720">
+                </picture>
+                </a>
+                <a href="https://soundcloud.com/STRIPESOUNDS"> 
+                <picture>
+                    <source srcset="SoundCloudLogo25x20.png" media="(min-width: 360px)">
+                    <source srcset="SoundCloudLogo810x1080.png" width="500vw" height="500vh" media="(min-width: 810px)">
+                    <source srcset="SoundCloudLogo1280x720" width="500vw" height="500vh" media="(min-width: 1280px)">
+                    <img src="SoundCloudLogo1280x720" style="width: 150%;" alt="SoundCloudLogo1280x720">
+                </picture>
+                </a>
+                <a href="https://www.youtube.com/@StripeSoundsBeatz/"> 
+                <picture> 
+                    <source srcset="YTFooterLogo25x20.png" media="(min-width: 360px)">
+                    <source srcset="YTFooterLogo810x1080.png" width="500vw" height="500vh" media="(min-width: 810px)">
+                    <source srcset="YTFooterLogo1280x720.png" width="500vw" height="500vh" media="(min-width: 1280px)">
+                    <img src="YTFooterLogo1280x720.png" style="width: 150%;" alt="YTFooterLogo1280x720">
+                </picture>
+                </a>
+            </div>
+            <div id="Privacy&Licenses" style="font-size: 0.4rem;">
+                <h1>PRIVACY POLICY</h1>
+                <h2>LICENSES</h2>
+            </div>    
+        </div>
+        <div id="NewsLetterSignup">
+            <h1> SignUp For The Newsletter </h1>
+            <label for="Name"> Name</label>
+            <br>
+            <input type="text" name="Name" placeholder="Name">
+            <br>
+            <label for="Email"> Email</label>
+            <br>
+            <input type="text" name="Name" placeholder="Enter Your Email">
+            <br>
+            <input type="submit" name="Name">
+        </div>
+    </div>    
+    <h1 style="font-size: 0.750rem; text-align: center;">
+            Website Designed By Dayan Jean(BishopGotBeats)
+    </h1> 
+</footer>
+</html>

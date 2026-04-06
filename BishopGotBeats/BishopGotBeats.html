@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BishopGotBeats</title>
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="stylesheet" href="BishopGotBeats.css">
+</head>
+<header>
+    <div id="Logo" onclick="window.location.href='BishopGotBeats.html'"> &#x212C;</a></div>
+    <div id="CartContainer" style="margin-top: 1vh;">
+        <div id="Cart">&#x1F6D2;</div>
+        <h1 id="CartQuantity">0</h1>
+    </div>
+</header>
+
+<body>
+    <div id="CartPopUpContainer">
+        <div id="CartPopUp">
+            <div id ="CloseModal" class="CloseButton" onclick= "closeModal()" style="margin-left: 60vw;" >×</div>
+            <div id="CartInformation">
+                <div id="CartItems" style="list-style-type: none; padding: 0; margin: 0;">
+                 <!-- Cart Products Will Be Dynamically Loaded -->
+                </div>
+                <div style="text-align: center;">
+                    <p>Total: $<span id="CartTotal">0</span></p>
+                    <button id="BuyButton">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="NewsLetterContainer" style="display: none;">
+<!-- NewsLetter Modal Will Be Dynamically Loaded -->
+    </div>
+    <section id="MusicPlayer">
+        <div id="SongInfo">
+            <h1 id="BeatTitle"> BEAT TILE </h1>
+            <h1 id="BeatGenre"> BEAT GENRE </h1>
+            <h1 id="BeatTempo"> BEAT TEMPO </h1>
+        </div>
+        <div id="PlaylistHamburger">&#x2630;</div>
+        <!-- Once User Clicks Playlist Hamburger, The Beat Playlist Will Be Dynamically Loaded-->
+        <div id="ControlsWCart">
+                <span id="PrevBtn" class="Controls" style="margin-right: 4vw;">&#x2190;</span> 
+                <span id="PlayPauseBtn" class="Controls">&#9654;</span>
+                <span id="NextBtn" class="Controls" style="margin-left: 4vw;">&#x2192;</span> 
+                <audio id="Beat"></audio> 
+                <div id="ProgressBarContainer" style="margin-top: 1vh; margin-left: 4vw;">
+                    <div id="ProgressBarFill"></div>
+                    <div id="TimeDisplay" style="text-align: center; margin-top: 2vh;">0:00 / 0:00</div>
+                </div>
+                <div id="DownloadButton" class="Controls" style="margin-left: 2vh;">&#x2193;</div>
+                <button id="AddToCartButton"  class="Controls" style="font-size: 0.25rem;  margin-left: 2vh;">ADD TO CART</div>
+        </div>
+        <div id="PlaylistModal">
+            <div id="SearchBar" style="display: flex; align-items: center;">
+                <span id="SearchIcon" style="font-size: 2rem; rotate: 180deg;">&#9740;</span>
+                <input id="PlaylistSearchField" type="search" placeholder="Search Beat/Genre">
+            </div>
+            <!--- Once User Searches Item, Search Results Will Be Displayed In Div Dynamically -->
+            <div id="SearchFieldResults" class="BeatsFromPlaylist"></div>
+            <div id="BeatsFromPlaylist" class="BeatsFromPlaylist"></div>
+        </div>
+        <div id="LicenseModalContainer">
+            <div id="LicenseModal">
+            <!--- Once User Add Beat To Cart, The License Modal Will Be Dynamically Loaded --> 
+            </div>           
+        </div>
+<!-- User Clicks To Download File From Music Playlist-->
+        <div id="DownloadModalContainer" class="PopupModal">
+        <!-- Once User Clicks Free Download, This Download Modal Will Pop Up--> 
+        </div>
+    </section>
+<!-- This Section Shows The Different Licenses Through a Carousel.
+Read More PopUps Will Display Full Contract Dynamically-->
+    <section id="LicensesWDealsPrices"> 
+	<!-- <h1 style="text-align:center; color:red;"> All Beats 50% Off. Exclusives - Buy 1, Get 1 Free.</h1> -->
+		<div id="Licenses" style="display: flex; font-size: 0.5rem; text-align: center; justify-content: center; margin-top: 1vh;">
+			<div>
+				<h1> MP3 </h1>
+				<ul>
+					<li> Untagged MP3 </li>
+					<li> Must Give Credit to "BishopGotBeats" </li>
+					<li> <strong> Producer Still Owns Rights </strong> </li>
+				</ul>
+			</div>
+			<div>
+			<h1> WAV </h1> 
+				<ul>
+					<li> Untagged WAV </li>
+					<li> Must Give Credit to "BishopGotBeats" </li>
+					<li> <strong> Producer Still Owns Rights </strong> </li>
+				</ul>
+			</div>
+			<div>
+			<h1> TRACKOUTS </h1> 
+				<ul>
+					<li> Untagged MP3, WAV & Stems </li>
+					<li> Must Give Credit to "BishopGotBeats" </li>
+					<li> <strong> Producer Still Owns Rights </strong> </li>
+				</ul>
+			</div>
+		</div>
+        <div style="display: flex; justify-content: center;">
+            <button id="LearnMore"> Learn More</button>
+        </div>
+	</section>
+	<section id="AboutMe">
+		<div id="AboutMeTxtWPic" style="display: flex; font-size: 0.5rem;">
+			<div>
+				<p> BishopGotBeats also known as Dayan Jean, Dayanmakebeats is a Haitian-American music producer 
+				that was born in Port-au-Prince, Haiti <br> on January 30, 2001. At the age of 9, Bishop moved to
+				Flatbush, Brooklyn NY to live with his father. <br> That was when, Bishop started experimenting 
+				with MixCraft, Fl Studio & would spent the remaining of his childhood.While attending Walt Whitman
+				Middle School, Bishop started making beats where he was inspired by Speaker Knockerz, Chief Keef, 
+				Young Chop & Future. <br> Once he got to high school, Bishop kept improving his craft by developing 
+				his Photoshop skills, mixing and audio engineering. In 2016, Bishop sold a beat to G3Chris also 
+				known as MixbyEl and that led to his first song called Want From Me. </p>
+				<div style="text-align: center;">
+				<button style="cursor: pointer;" onclick="window.location.href='About Me.html'">Read More</button>
+				</div>
+			</div>
+			<picture>
+				<source srcset="BishopGotBeatsGuitar180x120.jpg"media="(width < 360px)">
+				<source srcset="BishopGotBeatsGuitar384x193.jpg" media="(width < 810px)">
+				<source srcset="BishopGotBeatsGuitar683x146.jpg" media="(width < 1000px)">
+				<img src="BishopGotBeatsGuitar683x146.jpg" style="width: 50vw; height: 25vh;" alt="BishopGotBeatsDreads">
+			</picture>
+		</div>
+	</section>	
+    <section id="Testimonials" style="text-align: center;">
+        <div id="TestimonialsContainer">
+            <div class="SongCredits">
+                <picture>
+                <source srcset="MixedByEl120x120.jpg" media="(width < 360px)">
+                <img src="MixedByEl120x120.jpg"  style="width: 33vw;" alt="StripeSoundsBeatz">
+                </picture>                
+            </div>
+            <div class="SongCredits">
+                <picture>
+                <source srcset="MixedByEl120x120.jpg" media="(width < 360px)">
+                <img src="MixedByEl120x120.jpg"  style="width: 33vw;" alt="StripeSoundsBeatz">
+                </picture>
+            </div>
+            <div class="SongCredits">
+                <picture>
+                <source srcset="MixedByEl120x120.jpg" media="(width < 360px)">
+                <img src="MixedByEl120x120.jpg"  style="width: 33vw;" alt="StripeSoundsBeatz">
+                </picture>
+            </div>
+        </div>
+        <button id="ViewDiscography" style="position: relative; top: -4vh; margin-bottom: -10vh; cursor: pointer;" onclick="window.location.href='Testimonials.html'"> View More </button>
+    </section>
+    <script src="Modals.js"></script>
+    <script src="MusicPlayer.js"></script>
+    <script src="MusicPlaylist.js"></script>
+    <script src="Cart.js"></script>
+
+</body>
+<footer>
+    <div id="Container" style="display: flex; text-align: center; justify-content: space-around;">
+        <div id="SocialMediaIconsWOthers">
+        <h1> CONNECT WITH ME</h1>
+            <div style="display: flex; justify-content: space-evenly;">
+                <a href="https://www.instagram.com/stripesoundsbeatz/"> 
+                <picture>
+                    <source srcset="InstagramLogo25x20.png" media="(min-width: 360px)">
+                    <source srcset="InstagramLogo810x1080.png" width="500vw" height="500vh" media="(min-width: 810px)">
+                    <source srcset="InstagramLogo1280x720" width="500vw" height="500vh" media="(min-width: 1280px)">
+                    <img src="InstagramLogo1280x720" style="width: 150%;" alt="InstagramLogo1280x720">
+                </picture>
+                </a>
+                <a href="https://soundcloud.com/STRIPESOUNDS"> 
+                <picture>
+                    <source srcset="SoundCloudLogo25x20.png" media="(min-width: 360px)">
+                    <source srcset="SoundCloudLogo810x1080.png" width="500vw" height="500vh" media="(min-width: 810px)">
+                    <source srcset="SoundCloudLogo1280x720" width="500vw" height="500vh" media="(min-width: 1280px)">
+                    <img src="SoundCloudLogo1280x720" style="width: 150%;" alt="SoundCloudLogo1280x720">
+                </picture>
+                </a>
+                <a href="https://www.youtube.com/@StripeSoundsBeatz/"> 
+                <picture> 
+                    <source srcset="YTFooterLogo25x20.png" media="(min-width: 360px)">
+                    <source srcset="YTFooterLogo810x1080.png" width="500vw" height="500vh" media="(min-width: 810px)">
+                    <source srcset="YTFooterLogo1280x720.png" width="500vw" height="500vh" media="(min-width: 1280px)">
+                    <img src="YTFooterLogo1280x720.png" style="width: 150%;" alt="YTFooterLogo1280x720">
+                </picture>
+                </a>
+            </div>
+            <div id="Privacy&Licenses" style="font-size: 0.4rem;">
+                <h1>PRIVACY POLICY</h1>
+                <h2>LICENSES</h2>
+            </div>    
+        </div>
+        <div id="NewsLetterSignup">
+            <h1> SignUp For The Newsletter </h1>
+            <label for="Name"> Name</label>
+            <br>
+            <input type="text" name="Name" placeholder="Name">
+            <br>
+            <label for="Email"> Email</label>
+            <br>
+            <input type="text" name="Name" placeholder="Enter Your Email">
+            <br>
+            <input type="submit" name="Name">
+        </div>
+    </div>    
+    <h1 style="font-size: 0.750rem; text-align: center;">
+            Website Designed By Dayan Jean(BishopGotBeats)
+    </h1> 
+</footer>
+</html>

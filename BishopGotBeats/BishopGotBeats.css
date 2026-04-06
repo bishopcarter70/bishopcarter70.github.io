@@ -1,0 +1,341 @@
+*{
+    margin:0;
+}
+header {
+    background-color: #534D41;
+    text-align: center; 
+    display: flex; 
+    justify-content: space-between;  
+    font-size: 1rem;    
+    height: 5vh;
+}
+
+body { 
+    background-color: #F0CEA0;
+} 
+
+#Logo {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.CloseButton {
+    font-size: 4rem; 
+    position:relative; 
+    cursor: pointer;
+
+}
+
+#NewsLetterContainer {
+    display: block; 
+    position: fixed;  
+    left: 0; 
+    top: 0;  
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+
+
+#Cart {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+#CartQuantity {
+    font-size: 1rem; 
+    color: red; 
+    position: absolute; 
+    top: 2vh; 
+    right: 2vw; 
+    border-radius: 50%;
+}
+
+#CartPopUpContainer {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    justify-content: center;
+    align-items: center; 
+    z-index: 1;
+    display: none;
+}
+#CartPopUp {
+    height: 50vh; 
+    width: 75vw; 
+    background-color: white; 
+    margin-left: 12vw;
+    margin-top: 20vh;
+    z-index: 2;
+}
+
+#CartInformation {
+    border: #534D41 solid 4px;
+}
+
+#PlaylistHamburger {
+    color: black; 
+    font-size: 2rem; 
+    position: absolute; 
+    left: 88vw; 
+    top: 8vh; 
+    cursor: pointer;
+}
+
+#MusicPlayer {
+    height: 25vh;
+    background-color: #F0CEA0;
+}
+
+#SongInfo {
+    position: relative; 
+    top: 6vh;
+    text-align: center;
+    font-size: 0.25rem;
+}
+#ControlsWCart {
+    display: flex;
+    justify-content: center;
+    margin-top: 8vh;
+    font-size: 0.75rem;
+}
+
+.Controls{
+    cursor: pointer;
+    margin-top: 1vh;
+}
+
+#ProgressBarContainer {
+  width: 50%;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 3vh;
+}
+
+#ProgressBarFill {
+  height: 100%;
+  width: 0%; /* Initial width */
+  background-color: #4CAF50;
+}
+
+.PopupModal {
+     height: 25vh;
+     display: none;
+     position: fixed; 
+     top: 5.375vh; 
+     background-color: white;
+}
+
+#PlaylistModal {
+    background-color: #534D41;
+    height: 25vh; 
+    position: relative; 
+    bottom: 15vh; 
+    display: none; 
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#PlaylistSearchField {
+    width: 75vw; 
+    margin-left: 10vw;
+    height: 2vh; 
+    font-size: 1rem; 
+    text-align: center;
+}
+
+#LicenseModalContainer {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+#LicenseModal {
+    height: 50vh;
+    width: 75vw;
+    background-color: white;
+    font-size: 0.350rem;
+    text-align: center;
+    margin-left: 12vw;
+    margin-top: 20vh;
+}
+
+#LicenseNavigationContainer {
+    position: relative; 
+    bottom: -10vh;
+    margin-top: -5vh;
+
+    display: flex; 
+    justify-content: space-between; 
+    color: white;
+    font-size: 2rem; 
+    font-weight: bold;
+}
+
+.LicensesWPic {
+    padding-top: 2vh; 
+    text-align: center;
+    font-size: 0.450rem;
+    display: flex;
+}
+
+#Biography {
+    display: flex;
+    justify-content: space-between;
+}
+
+#BiographyText {
+    padding: 1rem;
+    font-size: 0.20rem;
+    text-align: center;
+}
+.OtherOnlinePlatforms {
+    display: flex;
+    font-size: 0.25rem;
+}
+
+
+#TestimonialsContainer {
+    display: flex
+}
+
+footer{
+    background-color: #534D41;
+    justify-content: center;    
+    font-size: 0.4rem;   
+}
+
+#NewsLetterSignup label {
+    font-size: 1rem;
+}
+
+
+@media (min-width: 600px) {
+    #LicenseInformation {
+    padding-top: 6vh; 
+    text-align: center;
+    font-size: 0.4rem;
+    }   
+}
+
+@media (min-width: 800px) {
+    #LicenseInformation {
+    padding-top: 8vh; 
+    text-align: center;
+    font-size: 0.5rem;
+    }   
+}
+
+@media (min-width: 1000px) {
+    #LicenseInformation {
+    padding-top: 10vh; 
+    text-align: center;
+    font-size: 0.675rem;
+    }   
+}
+
+@media (min-width: 1100px) {
+    #LicenseInformation {
+    padding-top: 20vh; 
+    text-align: center;
+    font-size: 0.7rem;
+    }   
+}
+/* #SocialMediaIcons {
+    display: flex;
+    justify-content: center;
+}
+*/
+
+
+
+
+/*
+@media (min-width: 600px) {
+    #SongInfo {
+        top: 6vh;
+        font-size: 0.775rem;
+    }
+    #ControlsWCart {
+    margin-top: 7.75vh;
+    font-size: 4rem;
+    }
+
+}
+
+@media (min-width: 700px) {
+    #SongInfo {
+        top: 6vh;
+        font-size: 0.725rem;
+    }
+    #ControlsWCart {
+    margin-top: 7.75vh;
+    font-size: 3.50rem;
+    }  
+}
+
+@media (min-width: 800px) {
+    #SongInfo {
+        top: 6vh;
+        font-size: 0.675rem;
+    }
+    #ControlsWCart {
+    margin-top: 7.75vh;
+    font-size: 2.75rem;
+    }
+}
+
+@media (max-width: 600px) {
+    #MusicPlayer {
+    height: 25vh;
+    background-color: #534D41;
+    } 
+}
+
+@media (min-width: 700px) {
+    #MusicPlayer {
+    height: 30vh;
+    background-color: #534D41;
+    } 
+}
+
+@media (min-width: 900px) {
+    #SongInfo {
+        top: 6vh;
+        font-size: 0.625rem;
+    }
+    #ControlsWCart {
+    margin-top: 7.75vh;
+    font-size: 2rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    #SongInfo {
+        top: 6vh;
+        font-size: 0.6rem;
+    }
+    #ControlsWCart {
+    margin-top: 7.75vh;
+    font-size: 2rem;
+    }
+
+    #MusicPlayer {
+    height: 50vh;
+    background-color: #534D41;
+    } 
+}
+
+
+
+
