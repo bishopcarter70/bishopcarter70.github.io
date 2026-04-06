@@ -170,34 +170,26 @@ body {
     margin-top: 20vh;
 }
 
-#LicenseNavigationContainer {
-    position: relative; 
-    bottom: -10vh;
-    margin-top: -5vh;
-
+#Licenses {
     display: flex; 
-    justify-content: space-between; 
-    color: white;
-    font-size: 2rem; 
-    font-weight: bold;
+    font-size: 0.5rem; 
+    text-align: center; 
+    justify-content: center; 
+    margin-top: 1vh;
 }
 
-.LicensesWPic {
-    padding-top: 2vh; 
-    text-align: center;
-    font-size: 0.450rem;
-    display: flex;
+#Licenses ul {
+    list-style-type: none;
+}
+
+#AboutMeTxtWPic {
+    display: flex; 
+    font-size: 0.5rem;
 }
 
 #Biography {
     display: flex;
-    justify-content: space-between;
-}
-
-#BiographyText {
-    padding: 1rem;
-    font-size: 0.20rem;
-    text-align: center;
+    font-size: 0.3rem;
 }
 .OtherOnlinePlatforms {
     display: flex;
@@ -220,122 +212,23 @@ footer{
 }
 
 
-@media (min-width: 600px) {
-    #LicenseInformation {
-    padding-top: 6vh; 
-    text-align: center;
-    font-size: 0.4rem;
+@media (width > 500px) {
+    #AboutMeTxtWPic {
+    display: flex; 
+    font-size: 0.650rem;
     }   
 }
 
-@media (min-width: 800px) {
-    #LicenseInformation {
-    padding-top: 8vh; 
-    text-align: center;
-    font-size: 0.5rem;
+@media (width > 800px) {
+    #AboutMeTxtWPic {
+    display: flex; 
+    font-size: 0.75rem;
     }   
 }
 
-@media (min-width: 1000px) {
-    #LicenseInformation {
-    padding-top: 10vh; 
-    text-align: center;
-    font-size: 0.675rem;
+@media (width > 1200px) {
+    #AboutMeTxtWPic {
+    display: flex; 
+    font-size: 0.775rem;
     }   
 }
-
-@media (min-width: 1100px) {
-    #LicenseInformation {
-    padding-top: 20vh; 
-    text-align: center;
-    font-size: 0.7rem;
-    }   
-}
-/* #SocialMediaIcons {
-    display: flex;
-    justify-content: center;
-}
-*/
-
-
-
-
-/*
-@media (min-width: 600px) {
-    #SongInfo {
-        top: 6vh;
-        font-size: 0.775rem;
-    }
-    #ControlsWCart {
-    margin-top: 7.75vh;
-    font-size: 4rem;
-    }
-
-}
-
-@media (min-width: 700px) {
-    #SongInfo {
-        top: 6vh;
-        font-size: 0.725rem;
-    }
-    #ControlsWCart {
-    margin-top: 7.75vh;
-    font-size: 3.50rem;
-    }  
-}
-
-@media (min-width: 800px) {
-    #SongInfo {
-        top: 6vh;
-        font-size: 0.675rem;
-    }
-    #ControlsWCart {
-    margin-top: 7.75vh;
-    font-size: 2.75rem;
-    }
-}
-
-@media (max-width: 600px) {
-    #MusicPlayer {
-    height: 25vh;
-    background-color: #534D41;
-    } 
-}
-
-@media (min-width: 700px) {
-    #MusicPlayer {
-    height: 30vh;
-    background-color: #534D41;
-    } 
-}
-
-@media (min-width: 900px) {
-    #SongInfo {
-        top: 6vh;
-        font-size: 0.625rem;
-    }
-    #ControlsWCart {
-    margin-top: 7.75vh;
-    font-size: 2rem;
-    }
-}
-
-@media (min-width: 1000px) {
-    #SongInfo {
-        top: 6vh;
-        font-size: 0.6rem;
-    }
-    #ControlsWCart {
-    margin-top: 7.75vh;
-    font-size: 2rem;
-    }
-
-    #MusicPlayer {
-    height: 50vh;
-    background-color: #534D41;
-    } 
-}
-
-
-
-
